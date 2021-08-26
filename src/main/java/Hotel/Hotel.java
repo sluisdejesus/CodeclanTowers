@@ -1,5 +1,6 @@
 package Hotel;
 
+import Room.Room;
 import RoomTypes.Bedroom;
 import RoomTypes.ConferenceRoom;
 
@@ -39,6 +40,14 @@ public class Hotel {
 
     public void addConferenceRoomToHotel(ConferenceRoom conferenceRoom){
         this.conferenceRooms.add(conferenceRoom);
+    }
+
+    public void checkGuestInToBedroom(Bedroom bedroom, Guest guest){
+        bedroom.checkInGuest(guest);
+    };
+
+    public void checkGuestOutOfBedroom(Bedroom bedroom, Guest guest){
+        bedroom.checkOutGuest(guest);
     }
 
 }

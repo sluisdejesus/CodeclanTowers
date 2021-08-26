@@ -8,10 +8,12 @@ import java.util.ArrayList;
 public class ConferenceRoom extends Room {
 
     private String name;
+    private ConferenceRoomType conferenceRoomType;
 
-    public ConferenceRoom(int capacity, String name){
-        super(capacity);
+    public ConferenceRoom(String name, ConferenceRoomType conferenceRoomType){
+        super();
         this.name = name;
+        this.conferenceRoomType = conferenceRoomType;
     }
 
     public String getName() {
